@@ -34,3 +34,37 @@ nav ul li a {
 nav ul li a:hover {
   color: red;
 }
+
+/* main section */
+
+.main-top {
+  width: 100%;
+  position: relative;
+}
+.box {
+position: relative;
+height: 100%;
+left: 8%;
+top: 30 vh;
+
+}
+.box h1{
+  font-size: 60px;
+}
+.box span{
+  color: #ffc234;
+
+}
+.box p{
+  color: rgb(99, 99, 99);
+  margin: 20px 0 40px 0;
+}
+.box a{
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 7px;
+  background-color: black;
+  margin-top: 20px;
+  
+}
