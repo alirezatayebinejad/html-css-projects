@@ -37,34 +37,73 @@ nav ul li a:hover {
 
 /* main section */
 
-.main-top {
-  width: 100%;
-  position: relative;
-}
 .box {
-position: relative;
-height: 100%;
-left: 8%;
-top: 30 vh;
+  margin-left: 8%;
+  margin-top: 15%;
+}
 
+.box h1 {
+  font-size: 50px;
+  color: #212121;
+  margin-bottom: 20px;
 }
-.box h1{
-  font-size: 60px;
-}
-.box span{
-  color: #ffc234;
 
+span {
+  color: orange;
 }
-.box p{
-  color: rgb(99, 99, 99);
-  margin: 20px 0 40px 0;
+
+.box p {
+  color: #555;
+  line-height: 22px;
 }
-.box a{
-  color: white;
+
+.box a {
+  background: #212121;
+  padding: 10px 18px;
   text-decoration: none;
-  padding: 10px;
-  border-radius: 7px;
-  background-color: black;
-  margin-top: 20px;
-  
+  font-weight: bold;
+  color: #fff;
+  display: inline-block;
+  margin: 30px 0;
+  border-radius: 5px;
+}
+
+.images {
+  width: 45%;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+}
+
+.images img {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: bottom 1s, left 1s;
+}
+
+.images:hover .shape {
+  bottom: 40px;
+}
+
+.images:hover .girl {
+  left: 45%;
+}
+
+.social {
+  margin-left: 8%;
+  margin-top: 100px;
+}
+
+.social a {
+  font-size: 30px;
+  color: #212121;
+  margin-right: 20px;
+}
+
+.social a:hover {
+  color: orange;
 }
