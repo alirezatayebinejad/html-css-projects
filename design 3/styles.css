@@ -1,6 +1,89 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap");
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* header styles */
+
+.header-container {
+  display: flex;
+  width: 75%;
+  height: 70px;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-container h1 {
+  font-size: 25px;
+}
+.header-container nav li {
+  float: left;
+  list-style: none;
+  font-size: 12px;
+}
+
+.header-container nav li a {
+  text-decoration: none;
+  color: black;
+  padding: 3px 15px;
+  margin-left: 5px;
+  border-radius: 30px;
+}
+
+.header-container nav li .active {
+  background-color: #d11414;
+  color: white;
+}
+
+.header-container nav li a:hover {
+  background-color: #d11414;
+  color: white;
+  transition: 0.2s;
+}
+
+/* showcase styles */
+
+.showcase {
+  height: calc(
+    100vh - 70px
+  ); /*viewport height - header height in .header-container*/
+  background-image: url("images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  backdrop-filter: blur(5px);
+  border-bottom: 8px solid #d11414;
+}
+.showcase .showcase-content {
+    background:  rgba(256, 256, 256,0.3);
+backdrop-filter: blur(5px);
+   color: rgb(0, 0, 0);
+   border-radius: 3px;
+  text-align: center;
+  width: 50%;
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  right: 25%;
+  
+}
+.showcase .showcase-content h2,
+p,
+button {
+  margin: 20px;
+}
+.showcase .showcase-content button{
+    background-color: transparent;
+    border:1px solid black;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+.showcase .showcase-content button:hover{
+    background-color: #d11414;
+    color: white;
+    border: 1px solid #d11414;
+    transition: 0.3s;
 }
