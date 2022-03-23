@@ -58,32 +58,77 @@
   border-bottom: 8px solid #d11414;
 }
 .showcase .showcase-content {
-    background:  rgba(256, 256, 256,0.3);
-backdrop-filter: blur(5px);
-   color: rgb(0, 0, 0);
-   border-radius: 3px;
+  background: rgba(256, 256, 256, 0.3);
+  backdrop-filter: blur(5px);
+  color: rgb(0, 0, 0);
+  border-radius: 3px;
   text-align: center;
   width: 50%;
   position: absolute;
   top: 30%;
   left: 25%;
   right: 25%;
-  
 }
 .showcase .showcase-content h2,
 p,
 button {
   margin: 20px;
 }
-.showcase .showcase-content button{
-    background-color: transparent;
-    border:1px solid black;
-    padding: 10px 25px;
-    cursor: pointer;
+.showcase .showcase-content button {
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 10px 25px;
+  cursor: pointer;
 }
-.showcase .showcase-content button:hover{
-    background-color: #d11414;
-    color: white;
-    border: 1px solid #d11414;
-    transition: 0.3s;
+.showcase .showcase-content button:hover {
+  background-color: #d11414;
+  color: white;
+  border: 1px solid #d11414;
+  transition: 0.3s;
+}
+
+/* about */
+
+.about {
+  height: 100vh;
+  overflow: none;
+}
+.about .about-text {
+  text-align: center;
+  padding: 70px 0 50px 0;
+}
+.about .about-content {
+  display: flex;
+  width: 70%;
+  margin: auto;
+}
+
+.about .about-content .picture img {
+  width: 400px;
+  height: 500px;
+  object-fit: cover;
+}
+.about .about-content .about-right {
+  color: rgb(65, 65, 65);
+  margin-left: 100px;
+}
+.about .about-content .about-right {
+  color: rgb(65, 65, 65);
+  margin-left: 100px;
+}
+.about .about-content .about-right li {
+  list-style-position: inside;
+}
+.about .about-content .about-right li::marker {
+  color: #d11414;
+}
+.about .about-content .about-right .socials i {
+  padding: 30px 5px;
+  color: black;
+}
+.about .about-content .about-right hr {
+  height: 5px;
+  background-color: #d11414;
+  border: none;
+  width: 30%;
 }
