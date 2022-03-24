@@ -4,10 +4,17 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
-/* header styles */
-
+/* header styles */ 
+header{
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-bottom: 1px solid rgb(177, 177, 177);
+}
 .header-container {
   display: flex;
   width: 75%;
@@ -223,7 +230,7 @@ footer {
   width: 40%;
   margin: auto;
   padding: 20px 40px;
-  
+
   margin-bottom: 0;
 }
 .footer-contact input {
@@ -255,12 +262,12 @@ footer {
   margin: 10px;
 }
 
-footer .downfooter{
+footer .downfooter {
   width: 100%;
   background-color: #d11414;
   height: 50px;
 }
-footer .downfooter p{
+footer .downfooter p {
   color: white;
   line-height: 50px;
   text-align: center;
