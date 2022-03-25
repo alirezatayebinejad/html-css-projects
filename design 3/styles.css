@@ -7,18 +7,22 @@
   scroll-behavior: smooth;
 }
 
-/* header styles */ 
-header{
+/* header styles */
+
+header {
   background-color: white;
   position: sticky;
   top: 0;
   z-index: 1;
   border-bottom: 1px solid rgb(177, 177, 177);
 }
+header .header-container .hamburger-icon { 
+  display:none;
+}
 .header-container {
   display: flex;
-  width: 75%;
-  height: 70px;
+  max-width: 75%;
+  min-height: 70px;
   margin: auto;
   align-items: center;
   justify-content: space-between;
@@ -96,10 +100,6 @@ button {
 
 /* about */
 
-.about {
-  height: 100vh;
-  overflow: none;
-}
 .about .about-text {
   text-align: center;
   padding: 70px 0 50px 0;
@@ -109,19 +109,15 @@ button {
   width: 70%;
   margin: auto;
 }
-
 .about .about-content .picture img {
-  width: 400px;
-  height: 500px;
+  max-width: 400px;
+  min-height: 500px;
   object-fit: cover;
 }
 .about .about-content .about-right {
   color: rgb(65, 65, 65);
   margin-left: 100px;
-}
-.about .about-content .about-right {
-  color: rgb(65, 65, 65);
-  margin-left: 100px;
+  min-height: 50%;
 }
 .about .about-content .about-right li {
   list-style-position: inside;
@@ -149,8 +145,8 @@ section .services-header {
 }
 .services {
   display: flex;
-  width: 80%;
-  height: calc(100vh - 100px);
+  min-width: 80%;
+  min-height: calc(100vh - 100px);
   flex-flow: wrap;
   justify-content: center;
   align-items: center;
@@ -200,14 +196,15 @@ section .projects-text {
 }
 section .projects {
   display: flex;
+  flex-flow: wrap;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 100px);
+  min-height: calc(100vh - 100px);
   color: rgb(73, 73, 73);
 }
 section .projects div {
   width: 300px;
-  height: 500px;
+  min-height: 500px;
   text-align: center;
   margin-left: 50px;
   padding: 50px 0;
@@ -261,7 +258,6 @@ footer {
   border: 0;
   margin: 10px;
 }
-
 footer .downfooter {
   width: 100%;
   background-color: #d11414;
@@ -271,4 +267,92 @@ footer .downfooter p {
   color: white;
   line-height: 50px;
   text-align: center;
+}
+
+/* resposive */
+
+@media only screen and (max-width: 770px) {
+  .header-container {
+    max-width: 95%;
+  }
+  .showcase .showcase-content {
+    width: 70%;
+    left: 15%;
+    top: 20%;
+  }
+  .about .about-content {
+    width: 90%;
+  }
+  .about .about-content .picture img {
+    max-width: 300px;
+    min-height: 400px;
+  }
+  .about .about-content .about-right {
+    margin-left: 20px;
+    font-size: 14px;
+  }
+  .footer-contact {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 606px) {
+  .header-container {
+    min-height: 50px;
+  }
+  .header-container h1 {
+    font-size: 18px;
+  }
+  .header-container nav li a {
+    padding: 3px 5px;
+    font-size: 10px;
+  }
+  .showcase .showcase-content {
+    top: 10%;
+  }
+  .about .about-content .picture img {
+    max-width: 250px;
+    max-height: 300px;
+  }
+  .about .about-content .about-right {
+    margin-left: 20px;
+    font-size: 10px;
+  }
+  .about .about-text {
+    padding: 30px 0 30px 0;
+  }
+  .services {
+    min-width: 95%;
+  }
+  .services div {
+    min-width: 200px;
+    min-height: 200px;
+    margin: 0 10px 20px 10px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  header .header-container .hamburger-icon { 
+    display:inline-block;
+  }
+  .header-container nav{
+    display: none;
+  }
+  .about .about-content{
+    flex-flow: wrap;
+  }
+  .about .about-content .picture img{
+    max-width: 100%;
+    min-height: 500px;
+  }
+  .about .about-content .about-right {
+    margin-left: 20px;
+    font-size: 13px;
+  }
+  section .projects div{
+    margin-left: 0px;
+  }
+  .footer-contact {
+    width: 90%;
+    
+  padding: 10px 10px;
+  }
 }
